@@ -61,13 +61,18 @@
   width: 100%;               
        
 }
+
+
 </style>
 
 </head>
 
                           <!-- body section -->
+                          <!-- body section -->
+
 <body class="bg-slate-100">
 
+                          <!-- nav section -->
                           <!-- nav section -->
 
    <section class=" width  poppins-font mt-2 bg-white p-4 rounded-lg">
@@ -82,11 +87,11 @@
        <div class="flex align-center gap-7">
         <div class="flex align-center gap-3 bg-slate-100 p-2 rounded-3xl">
             <img class="h-6" src="assets/checkbox.png" alt="">
-            <p class="text-2xl font-bold ">23</p>
+            <p class="text-2xl font-bold " id="nav-dynamic-number">23</p>
         </div>
 
         <div class="bg-slate-100 p-2 rounded-full">
-            <img class="h-8 " src="assets/theme-btn.png" alt="">
+            <img class="h-8 " id="bg-color-changer" onclick="changeBgColor()" src="assets/theme-btn.png" alt="">
         </div>
        </div>
 
@@ -94,9 +99,13 @@
    </section>
 
                       <!-- main section -->
+                      <!-- main section -->
+
    <main class="width mt-4 mb-10 poppins-font flex justify-between gap-5 ">
 
     <section class= "left-section bg-white rounded-lg p-4 max-w-6xl">
+
+                       <!-- div-1 -->
                        <!-- div-1 -->
 
         <div class="div-1 flex justify-between gap-3">
@@ -107,13 +116,13 @@
 
                <div>
                 <p class="font-medium">Task Assigned</p>
-                <p class="text-3xl font-bold">05</p>
+                <p class="text-3xl font-bold" id="div1-dynamic-number">06</p>
                </div>
 
             </div>
 
 
-            <div class="flex align-center justify-center gap-3  bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]  card-width h-32 rounded-lg">
+            <div class="flex align-center justify-center gap-3  bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]  card-width h-32 rounded-lg " id="discover">
                 <img src="assets/board.png" alt="">
                 <p class="text-2xl font-medium text-white">Discover Something <br> New Today!</p>
             </div>
@@ -126,7 +135,7 @@
 
                <div>
                 <p class=" text-2xl font-normal">Wed ,</p>
-                <p class="text-2xl font-bold"> Jul 28 2025</p>
+                <p class="text-2xl font-bold" id="dynamic date"> Jul 28 2025</p>
                </div>
 
             </div>
@@ -135,10 +144,14 @@
 
         </div>
         <div class="dotted-line mt-6 mb-6"></div>
+
+                        <!-- div-2 -->
                         <!-- div-2 -->
 
         <div class="div-2  flex flex-wrap  justify-between gap-10">
 
+                                    <!-- card 1 -->
+
            <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
             <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">ShopEase</p>
             <p class="text-2xl font-medium mb-4">Fix Mobile Button Issue </p>
@@ -150,87 +163,88 @@
             <div class="flex justify-between">
                 <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg">Completed</button>
+                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn" id="btn-card1" >Completed</button>
             </div>
+
+                                              <!-- card 2 -->
 
 
            </div>
            <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
-            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">ShopEase</p>
-            <p class="text-2xl font-medium mb-4">Fix Mobile Button Issue </p>
-            <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-            and ensure onClick works properly</p>
+            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">CloudSync</p>
+            <p class="text-2xl font-medium mb-4" id="dark">Add Dark Mode</p>
+            <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
 
             <div class="dotted-line mb-4 mt-4"></div>
 
             <div class="flex justify-between">
                 <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg">Completed</button>
+                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"  id="btn-card2">Completed</button>
             </div>
 
-
+                                                    <!-- card 3 -->
            </div>
            <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
-            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">ShopEase</p>
-            <p class="text-2xl font-medium mb-4">Fix Mobile Button Issue </p>
+            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">SwiftPay</p>
+            <p class="text-2xl font-medium mb-4">Optimize  Home page  </p>
             <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-            and ensure onClick works properly</p>
+                and ensure onClick works properly</p>
 
             <div class="dotted-line mb-4 mt-4"></div>
 
             <div class="flex justify-between">
                 <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg">Completed</button>
+                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"  id="btn-card3">Completed</button>
             </div>
 
-
+                                                    <!-- card 4 -->
            </div>
            <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
-            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">ShopEase</p>
-            <p class="text-2xl font-medium mb-4">Fix Mobile Button Issue </p>
+            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">Meta</p>
+            <p class="text-2xl font-medium mb-4">Add new emoji 🤲 </p>
             <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-            and ensure onClick works properly</p>
+                and ensure onClick works properly</p>
 
             <div class="dotted-line mb-4 mt-4"></div>
 
             <div class="flex justify-between">
                 <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg">Completed</button>
+                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"  id="btn-card4">Completed</button>
             </div>
 
-
+                                                    <!-- card 5 -->
            </div>
            <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
-            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">ShopEase</p>
-            <p class="text-2xl font-medium mb-4">Fix Mobile Button Issue </p>
+            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">Google LLC</p>
+            <p class="text-2xl font-medium mb-4">Integrate OpenAI API  </p>
             <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-            and ensure onClick works properly</p>
+                and ensure onClick works properly</p>
 
             <div class="dotted-line mb-4 mt-4"></div>
 
             <div class="flex justify-between">
                 <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg">Completed</button>
+                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"  id="btn-card5">Completed</button>
             </div>
 
-
+                                                 <!-- card 6 -->
            </div>
            <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
-            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">ShopEase</p>
-            <p class="text-2xl font-medium mb-4">Fix Mobile Button Issue </p>
+            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">Glassdoar</p>
+            <p class="text-2xl font-medium mb-4">Improve Job searching </p>
             <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-            and ensure onClick works properly</p>
+                and ensure onClick works properly</p>
 
             <div class="dotted-line mb-4 mt-4"></div>
 
             <div class="flex justify-between">
                 <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg">Completed</button>
+                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"  id="btn-card6">Completed</button>
             </div>
 
 
@@ -245,15 +259,19 @@
 
                              <!-- right-section -->
 
-    <section class="right-section right-section-height bg-white w-96 rounded-lg">
+    <section class=" right-section right-section-height bg-white w-96 rounded-lg" >
      <div>
         <div class="flex align-center justify-center mt-5 mb-4 gap-4">
             <img class="h-6 w-6" src="assets/activity.png" alt="">
             <p class="text-xl font-medium ">Activity Log</p>
         </div>
 
-        <button class="bg-[#3752FD] p-2 px-4 text-white rounded-lg text-center flex  mx-auto mb-5" >Clear History</button>
+        <button class="bg-[#3752FD] p-2 px-4 text-white rounded-lg text-center flex  mx-auto mb-5" id="btn-history" >Clear History</button>
         <div class="dotted-line"></div>
+     </div>
+
+     <div id="history-section">
+        <p></p>
      </div>
 
 
@@ -264,6 +282,87 @@
 
 
    </main>
+
+
+
+   <script>
+
+                            // bg color changer
+                            // bg color changer
+
+    function changeBgColor() {
+        const colors = [
+  '#f0f8ff', '#faebd7', '#f5f5dc', '#ffe4c4', '#f5f5f5', '#dcdcdc', '#fffafa', '#f0fff0',
+  '#f5fffa', '#f0ffff', '#f0f8ff', '#e6e6fa', '#fff0f5', '#fdf5e6', '#fffff0', '#f0ffff',
+  '#faf0e6', '#fffaf0', '#ffffe0', '#f8f8ff', '#d3d3d3', '#add8e6', '#e0ffff', '#f0e68c',
+  '#dda0dd', '#b0e0e6', '#afeeee', '#f5deb3', '#ffe4e1', '#f4a460', '#ffdead', '#ffebcd',
+  '#ffe4b5', '#ffefd5', '#fff5ee', '#f5f5f5', '#fff8dc', '#fafad2', '#fdf5e6', '#ffe4c4',
+  '#faebd7', '#ffe4e1', '#f0fff0', '#f5fffa', '#f0ffff', '#f0f8ff', '#e6e6fa', '#fff0f5',
+  '#fdf5e6', '#fffff0', '#f0ffff', '#faf0e6', '#fffaf0', '#ffffe0', '#f8f8ff', '#d3d3d3',
+  '#add8e6', '#e0ffff', '#f0e68c', '#dda0dd', '#b0e0e6', '#afeeee', '#f5deb3', '#ffe4e1',
+  '#f4a460', '#ffdead', '#ffebcd', '#ffe4b5', '#ffefd5', '#fff5ee', '#f5f5f5', '#fff8dc',
+  '#fafad2', '#fdf5e6', '#ffe4c4', '#faebd7', '#ffe4e1', '#f0fff0', '#f5fffa', '#f0ffff',
+  '#f0f8ff', '#e6e6fa', '#fff0f5', '#fdf5e6', '#fffff0', '#f0ffff', '#faf0e6', '#fffaf0',
+  '#ffffe0', '#f8f8ff', '#d3d3d3', '#add8e6', '#e0ffff', '#f0e68c', '#dda0dd', '#b0e0e6',
+  '#afeeee', '#f5deb3', '#ffe4e1'
+];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+
+
+                                //   dynamic number
+                                //   dynamic number
+
+
+    const buttons = document.querySelectorAll('.num-changing-btn');
+    const navNumber = document.getElementById('nav-dynamic-number');
+    const taskAssignNumber = document.getElementById('div1-dynamic-number')
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        if (confirm('Board Updated Successfully.')) {
+
+          let currentNavNumber = parseInt(navNumber.textContent);
+          navNumber.textContent = currentNavNumber + 1;
+
+          let currentTaskNumber = parseInt(taskAssignNumber.textContent);
+          taskAssignNumber.textContent = currentTaskNumber - 1;
+
+          const historyList = document.getElementById('history-section');
+          let history= document.getElementById('dark')
+            historyText = history.innerText
+
+            const newHistoryItem = document.createElement('p');
+            newHistoryItem.textContent = `You have completed the task ` + historyText;
+            historyList.appendChild(newHistoryItem);
+
+
+            
+
+
+          button.disabled = true;
+          button.style.backgroundColor ='lightskyblue'
+        }
+      });
+    });
+
+
+    const history = document.getElementById('btn-history')
+    history.addEventListener('click',function(){
+        let historyText = document.getElementById('history-section')
+        historyText.textContent = ''
+
+    })
+
+            //  switch to discover page
+
+    let discover = document.getElementById('discover')
+    discover.addEventListener('click',function(){
+        window.location.href = 'discover.html';
+    })
+
+  </script>
    
 </body>
 

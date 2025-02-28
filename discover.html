@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Something New Today</title>
+
+                         <!-- poppins font -->
+
+                         <link rel="preconnect" href="https://fonts.googleapis.com">
+                         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+                         
+                                                   <!-- Tailwind CSS -->
+                         
+                         <script src="https://cdn.tailwindcss.com"></script>
+
+    
+       <style>
+         .poppins-font {
+      font-family: "Poppins", sans-serif;
+      
+    }
+    
+    .width{
+        max-width: 1536px;
+        margin: 0 auto;
+    }
+    
+    .align-center{
+        align-items: center;
+    }
+
+    .dotted-line {
+  border-top: 3px dashed #0000005e; 
+  width: 100%;               
+       
+}
+
+
+       </style>
+    
+</head>
+
+
+<body class="bg-slate-100">
+
+    <section class=" width  poppins-font mt-2 bg-white p-4 rounded-lg mb-5">
+        <nav class="flex justify-between align-center">
+    
+            <div class="flex align-center gap-2">
+                <img class="h-14 w-14" src="assets/logo.png" alt="">
+                <p class="text-4xl font-normal ">Dev<span class="font-bold">Board</span></p>
+            </div>
+    
+    
+          <div>
+            <button class="bg-[#3752FD] p-3 text-white rounded-lg text-2xl font-medium" id="btn-back">Back to Desk</button>
+          </div>
+    
+        </nav>
+       </section>
+
+
+
+
+       <h1 class="text-4xl font-bold text-center mb-8">Blogs</h1>
+
+
+       <section class="width">
+
+        <div class="bg-white rounded-lg px-5 py-10 mb-6">
+            <p class="text-3xl font-bold mb-5">Question-1: What are the different ways to select an element in the DOM?
+            </p>
+            <div class="dotted-line"></div>
+            <p class="text-2xl mt-6">
+                There are many ways to select an element in the DOM.Five ways to select an element in the DOM are given below : <br> <br>
+
+                1.querySelectorAll() <br>
+                2.querySelector() <br>
+                3.getElementById() <br>
+                4.getElementsByClassName() <br>
+                5.getElementsByTagName() 
+
+            </p>
+           </div>
+
+
+
+        <div class="bg-white rounded-lg px-5 py-10 mb-6">
+            <p class="text-3xl font-bold mb-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </p>
+            <div class="dotted-line"></div>
+            <p class="text-2xl mt-6">
+                innerHTML : HTML markup <br>
+                innerText : Visible text after considering styles <br>
+                textContent : All text content even from hidden elements
+
+            </p>
+           </div>
+
+
+
+        <div class="bg-white rounded-lg px-5 py-10 mb-6">
+            <p class="text-3xl font-bold mb-5">Question-3: What is event delegation in the DOM?
+            </p>
+            <div class="dotted-line"></div>
+            <p class="text-2xl mt-6">Event delegation is a way of handling events in JavaScript by attaching a single event listener to a parent element instead of attaching one to each child element.</p>
+           </div>
+
+
+
+        <div class="bg-white rounded-lg px-5 py-10 mb-6">
+            <p class="text-3xl font-bold mb-5">Question-4: What is event bubbling in the DOM?
+            </p>
+            <div class="dotted-line"></div>
+            <p class="text-2xl mt-6">Event bubbling is a process in the DOM (Document Object Model) where an event that is triggered on an element "bubbles up" to its parent elements, and then continues to move upward to the root of the document.</p>
+           </div>
+
+
+
+        <div class="bg-white rounded-lg px-5 py-10 mb-4">
+            <p class="text-3xl font-bold mb-5">Question-5: How do you create, add, and remove elements using JavaScript?
+            </p>
+            <div class="dotted-line"></div>
+            <p class="text-2xl mt-6">
+                1.Create Elements : document.createElement() <br>
+                2.Add Elements : parentElement.appendChild(newElement) <br>
+                3.Remove Elements : element.remove()   or  parentElement.removeChild(childElement)
+            </p>
+           </div>
+
+       </section>
+
+
+
+
+                
+   <script>
+     let back = document.getElementById('btn-back')
+    back.addEventListener('click',function(){
+        window.location.href = 'index.html';
+    })
+   </script>
+    
+</body>
+
+
+</html>
