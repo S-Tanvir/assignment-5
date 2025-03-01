@@ -1,327 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-
-                          <!-- head section -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- head section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 5</title>
 
-                          <!-- poppins font -->
+    <!-- poppins font -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-                          <!-- Tailwind CSS -->
+    <!-- Tailwind CSS -->
 
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-                          <!-- style section -->
-<style>
-    .poppins-font {
-  font-family: "Poppins", sans-serif;
-  
-}
+    <!-- style section -->
+    <style>
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+      }
 
-.width{
-    max-width: 1536px;
-    margin: 0 auto;
-}
+      .width {
+        max-width: 1536px;
+        margin: 0 auto;
+      }
 
-.align-center{
-    align-items: center;
-}
+      .align-center {
+        align-items: center;
+      }
 
-.card-width{
-    width: 524px;
-}
+      .card-width {
+        width: 524px;
+      }
 
-.cards-width{
-    width: 342px;
-    height: 300px;
-}
+      .cards-width {
+        width: 342px;
+        height: 300px;
+      }
 
-.overflow-control {
-     
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 2; 
-      -webkit-box-orient: vertical;
-      text-overflow: ellipsis;
-}
+      .overflow-control {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+      }
 
-.right-section-height{
-    height: 865px;
-}
+      .right-section-height {
+        height: 865px;
+      }
 
+      .dotted-line {
+        border-top: 2px dashed #3751fd16;
+        width: 100%;
+      }
+    </style>
+  </head>
 
-.dotted-line {
-  border-top: 2px dashed #3751fd16; 
-  width: 100%;               
-       
-}
+  <!-- body section -->
+  <!-- body section -->
 
+  <body class="bg-slate-100">
+    <!-- nav section -->
+    <!-- nav section -->
 
-</style>
-
-</head>
-
-                          <!-- body section -->
-                          <!-- body section -->
-
-<body class="bg-slate-100">
-
-                          <!-- nav section -->
-                          <!-- nav section -->
-
-   <section class=" width  poppins-font mt-2 bg-white p-4 rounded-lg">
-    <nav class="flex justify-between align-center">
-
+    <section class="width poppins-font mt-2 bg-white p-4 rounded-lg">
+      <nav class="flex justify-between align-center">
         <div class="flex align-center gap-2">
-            <img class="h-14 w-14" src="assets/logo.png" alt="">
-            <p class="text-4xl font-normal ">Dev<span class="font-bold">Board</span></p>
+          <img class="h-14 w-14" src="assets/logo.png" alt="" />
+          <p class="text-4xl font-normal">
+            Dev<span class="font-bold">Board</span>
+          </p>
         </div>
 
+        <div class="flex align-center gap-7">
+          <div
+            class="flex align-center gap-3 bg-slate-100 py-2 px-5 rounded-3xl"
+          >
+            <img class="h-6" src="assets/checkbox.png" alt="" />
+            <p class="text-2xl font-bold" id="nav-dynamic-number">23</p>
+          </div>
 
-       <div class="flex align-center gap-7">
-        <div class="flex align-center gap-3 bg-slate-100 p-2 rounded-3xl">
-            <img class="h-6" src="assets/checkbox.png" alt="">
-            <p class="text-2xl font-bold " id="nav-dynamic-number">23</p>
+          <div class="bg-slate-100 p-2 rounded-full">
+            <img
+              class="h-8"
+              id="bg-color-changer"
+              onclick="changeBgColor()"
+              src="assets/theme-btn.png"
+              alt=""
+            />
+          </div>
         </div>
+      </nav>
+    </section>
 
-        <div class="bg-slate-100 p-2 rounded-full">
-            <img class="h-8 " id="bg-color-changer" onclick="changeBgColor()" src="assets/theme-btn.png" alt="">
-        </div>
-       </div>
+    <!-- main section -->
+    <!-- main section -->
 
-    </nav>
-   </section>
+    <main class="width mt-4 mb-10 poppins-font flex justify-between gap-5">
+      <!-- left section -->
+      <!-- left section -->
 
-                      <!-- main section -->
-                      <!-- main section -->
-
-   <main class="width mt-4 mb-10 poppins-font flex justify-between gap-5 ">
-
-    <section class= "left-section bg-white rounded-lg p-4 max-w-6xl">
-
-                       <!-- div-1 -->
-                       <!-- div-1 -->
+      <section class="left-section bg-white rounded-lg p-4 max-w-6xl">
+        <!-- div-1 -->
+        <!-- div-1 -->
 
         <div class="div-1 flex justify-between gap-3">
+          <div
+            class="flex align-center justify-center gap-6 w-64 h-32 bg-slate-100 rounded-lg"
+          >
+            <img
+              class="bg-white p-2 rounded-lg"
+              src="assets/checkbox.png"
+              alt=""
+            />
 
-            <div class="flex align-center justify-center gap-6 w-64 h-32 bg-slate-100 rounded-lg">
-
-                <img src="assets/checkbox.png" alt="">
-
-               <div>
-                <p class="font-medium">Task Assigned</p>
-                <p class="text-3xl font-bold" id="div1-dynamic-number">06</p>
-               </div>
-
+            <div>
+              <p class="font-medium">Task Assigned</p>
+              <p class="text-3xl font-bold" id="div1-dynamic-number">06</p>
             </div>
+          </div>
 
+          <div
+            class="flex align-center justify-center gap-3 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] card-width h-32 rounded-lg"
+            id="discover"
+          >
+            <img src="assets/board.png" alt="" />
+            <p class="text-2xl font-medium text-white">
+              Discover Something <br />
+              New Today!
+            </p>
+          </div>
 
-            <div class="flex align-center justify-center gap-3  bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]  card-width h-32 rounded-lg " id="discover">
-                <img src="assets/board.png" alt="">
-                <p class="text-2xl font-medium text-white">Discover Something <br> New Today!</p>
+          <div
+            class="flex align-center justify-center gap-3 w-64 h-32 bg-slate-100 rounded-lg"
+          >
+            <img
+              class="bg-white p-2 rounded-lg"
+              src="assets/calender.png"
+              alt=""
+            />
+
+            <div>
+              <p class="text-2xl font-bold" id="dynamic-date"></p>
             </div>
-
-
-            
-            <div class="flex align-center justify-center gap-6 w-64 h-32 bg-slate-100 rounded-lg">
-
-                <img src="assets/calender.png" alt="">
-
-               <div>
-                <p class=" text-2xl font-normal">Wed ,</p>
-                <p class="text-2xl font-bold" id="dynamic date"> Jul 28 2025</p>
-               </div>
-
-            </div>
-
-            
-
+          </div>
         </div>
         <div class="dotted-line mt-6 mb-6"></div>
 
-                        <!-- div-2 -->
-                        <!-- div-2 -->
+        <!-- div-2 -->
+        <!-- div-2 -->
 
-        <div class="div-2  flex flex-wrap  justify-between gap-10">
+        <div class="div-2 flex flex-wrap justify-between gap-10">
+          <!-- card 1 -->
 
-                                    <!-- card 1 -->
-
-           <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
-            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">ShopEase</p>
-            <p class="text-2xl font-medium mb-4">Fix Mobile Button Issue </p>
-            <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-            and ensure onClick works properly</p>
-
-            <div class="dotted-line mb-4 mt-4"></div>
-
-            <div class="flex justify-between">
-                <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
-
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn" id="btn-card1" >Completed</button>
-            </div>
-
-                                              <!-- card 2 -->
-
-
-           </div>
-           <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
-            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">CloudSync</p>
-            <p class="text-2xl font-medium mb-4" id="dark">Add Dark Mode</p>
-            <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+          <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
+            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">
+              ShopEase
+            </p>
+            <p class="text-2xl font-medium mb-4" id="p1">
+              Fix Mobile Button Issue
+            </p>
+            <p class="bg-white rounded-lg px-4 py-1 pt-3 overflow-control">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
 
             <div class="dotted-line mb-4 mt-4"></div>
 
             <div class="flex justify-between">
-                <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
+              <p class="text-sm">
+                Deadline <br /><span class="font-medium text-base">
+                  21 March 2025</span
+                >
+              </p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"  id="btn-card2">Completed</button>
+              <button
+                class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"
+                id="btn-card1"
+              >
+                Completed
+              </button>
             </div>
 
-                                                    <!-- card 3 -->
-           </div>
-           <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
-            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">SwiftPay</p>
-            <p class="text-2xl font-medium mb-4">Optimize  Home page  </p>
-            <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                and ensure onClick works properly</p>
+            <!-- card 2 -->
+          </div>
+          <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
+            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">
+              CloudSync
+            </p>
+            <p class="text-2xl font-medium mb-4" id="p2">Add Dark Mode</p>
+            <p class="bg-white rounded-lg px-4 py-1 pt-3 overflow-control">
+              Store the user's preference in localStorage, update CSS variables
+              dynamically, and apply a smooth transition effect.
+            </p>
 
             <div class="dotted-line mb-4 mt-4"></div>
 
             <div class="flex justify-between">
-                <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
+              <p class="text-sm">
+                Deadline <br /><span class="font-medium text-base">
+                  21 March 2025</span
+                >
+              </p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"  id="btn-card3">Completed</button>
+              <button
+                class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"
+                id="btn-card2"
+              >
+                Completed
+              </button>
             </div>
 
-                                                    <!-- card 4 -->
-           </div>
-           <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
+            <!-- card 3 -->
+          </div>
+          <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
+            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">
+              SwiftPay
+            </p>
+            <p class="text-2xl font-medium mb-4" id="p3">Optimize Home page </p>
+            <p class="bg-white rounded-lg px-4 py-1 pt-3 overflow-control">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+
+            <div class="dotted-line mb-4 mt-4"></div>
+
+            <div class="flex justify-between">
+              <p class="text-sm">
+                Deadline <br /><span class="font-medium text-base">
+                  21 March 2025</span
+                >
+              </p>
+
+              <button
+                class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"
+                id="btn-card3"
+              >
+                Completed
+              </button>
+            </div>
+
+            <!-- card 4 -->
+          </div>
+          <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
             <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">Meta</p>
-            <p class="text-2xl font-medium mb-4">Add new emoji 🤲 </p>
-            <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                and ensure onClick works properly</p>
+            <p class="text-2xl font-medium mb-4" id="p4">Add new emoji 🤲</p>
+            <p class="bg-white rounded-lg px-4 py-1 pt-3 overflow-control">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
 
             <div class="dotted-line mb-4 mt-4"></div>
 
             <div class="flex justify-between">
-                <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
+              <p class="text-sm">
+                Deadline <br /><span class="font-medium text-base">
+                  21 March 2025</span
+                >
+              </p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"  id="btn-card4">Completed</button>
+              <button
+                class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"
+                id="btn-card4"
+              >
+                Completed
+              </button>
             </div>
 
-                                                    <!-- card 5 -->
-           </div>
-           <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
-            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">Google LLC</p>
-            <p class="text-2xl font-medium mb-4">Integrate OpenAI API  </p>
-            <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                and ensure onClick works properly</p>
+            <!-- card 5 -->
+          </div>
+          <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
+            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">
+              Google LLC
+            </p>
+            <p class="text-2xl font-medium mb-4" id="p5">
+              Integrate OpenAI API
+            </p>
+            <p class="bg-white rounded-lg px-4 py-1 pt-3 overflow-control">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
 
             <div class="dotted-line mb-4 mt-4"></div>
 
             <div class="flex justify-between">
-                <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
+              <p class="text-sm">
+                Deadline <br /><span class="font-medium text-base">
+                  21 March 2025</span
+                >
+              </p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"  id="btn-card5">Completed</button>
+              <button
+                class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"
+                id="btn-card5"
+              >
+                Completed
+              </button>
             </div>
 
-                                                 <!-- card 6 -->
-           </div>
-           <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
-            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">Glassdoar</p>
-            <p class="text-2xl font-medium mb-4">Improve Job searching </p>
-            <p class="bg-white rounded-lg px-4 py-1 pt-3  overflow-control">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                and ensure onClick works properly</p>
+            <!-- card 6 -->
+          </div>
+          <div class="bg-slate-100 cards-width p-4 mb-2 rounded-lg">
+            <p class="bg-white rounded-lg w-28 text-center p-1 mb-4">
+              Glassdoar
+            </p>
+            <p class="text-2xl font-medium mb-4" id="p6">
+              Improve Job searching
+            </p>
+            <p class="bg-white rounded-lg px-4 py-1 pt-3 overflow-control">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
 
             <div class="dotted-line mb-4 mt-4"></div>
 
             <div class="flex justify-between">
-                <p class="text-sm">Deadline <br><span class="font-medium text-base"> 21 March 2025</span></p>
+              <p class="text-sm">
+                Deadline <br /><span class="font-medium text-base">
+                  21 March 2025</span
+                >
+              </p>
 
-                <button class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn"  id="btn-card6">Completed</button>
+              <button
+                class="bg-[#3752FD] p-2 text-white rounded-lg num-changing-btn-x"
+                id="btn-card6"
+              >
+                Completed
+              </button>
             </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- right-section -->
+      <!-- right-section -->
 
-           </div>
+      <section
+        class="right-section right-section-height bg-white w-96 rounded-lg"
+      >
+        <div>
+          <div class="flex align-center justify-center mt-5 mb-4 gap-4">
+            <img class="h-6 w-6" src="assets/activity.png" alt="" />
+            <p class="text-xl font-medium">Activity Log</p>
+          </div>
 
-
+          <button
+            class="bg-[#3752FD] p-2 px-4 text-white rounded-lg text-center flex mx-auto mb-5"
+            id="btn-history"
+          >
+            Clear History
+          </button>
+          <div class="dotted-line"></div>
         </div>
 
-
-    </section>
-
-
-                             <!-- right-section -->
-
-    <section class=" right-section right-section-height bg-white w-96 rounded-lg" >
-     <div>
-        <div class="flex align-center justify-center mt-5 mb-4 gap-4">
-            <img class="h-6 w-6" src="assets/activity.png" alt="">
-            <p class="text-xl font-medium ">Activity Log</p>
+        <div id="history-section">
+          <p></p>
         </div>
+      </section>
+    </main>
 
-        <button class="bg-[#3752FD] p-2 px-4 text-white rounded-lg text-center flex  mx-auto mb-5" id="btn-history" >Clear History</button>
-        <div class="dotted-line"></div>
-     </div>
+    <!-- script start -->
+    <!-- script start -->
 
-     <div id="history-section">
-        <p></p>
-     </div>
+    <script>
+      //   dynamic date
+      //   dynamic date
 
+      const today = new Date();
+      const currentDate = today.toDateString();
+      document.getElementById("dynamic-date").innerText = currentDate;
 
-    </section>
+      // bg color changer
+      // bg color changer
 
+      let bgColorChanger = document.getElementById("bg-color-changer");
 
+      const colors = [
+        "#8B0000",
+        "#B22222",
+        "#A52A2A",
+        "#800000",
+        "#DC143C",
+        "#CD5C5C",
+        "#8B4513",
+        "#D2691E",
+        "#A0522D",
+        "#B8860B",
+        "#DAA520",
+        "#CD853F",
+        "#8B0000",
+        "#8B4513",
+        "#2F4F4F",
+        "#556B2F",
+        "#6B8E23",
+        "#808000",
+        "#9ACD32",
+        "#32CD32",
+        "#228B22",
+        "#008000",
+        "#006400",
+        "#20B2AA",
+        "#008B8B",
+        "#008080",
+        "#4682B4",
+        "#4169E1",
+        "#191970",
+        "#483D8B",
+        "#4B0082",
+        "#8A2BE2",
+        "#9400D3",
+        "#9932CC",
+        "#8B008B",
+        "#800080",
+        "#FF4500",
+        "#FF6347",
+        "#CD5C5C",
+        "#E9967A",
+        "#FA8072",
+        "#FFA07A",
+        "#A52A2A",
+        "#D2691E",
+        "#8B4513",
+        "#f0f8ff",
+        "#faebd7",
+        "#f5f5dc",
+        "#ffe4c4",
+        "#f5f5f5",
+        "#dcdcdc",
+        "#fffafa",
+        "#f0fff0",
+        "#f5fffa",
+        "#f0ffff",
+        "#f0f8ff",
+        "#e6e6fa",
+        "#fff0f5",
+        "#fdf5e6",
+        "#fffff0",
+        "#f0ffff",
+        "#faf0e6",
+        "#fffaf0",
+        "#ffffe0",
+        "#f8f8ff",
+        "#d3d3d3",
+        "#add8e6",
+        "#e0ffff",
+        "#f0e68c",
+        "#dda0dd",
+        "#b0e0e6",
+        "#afeeee",
+        "#f5deb3",
+        "#ffe4e1",
+        "#f4a460",
+        "#ffdead",
+        "#ffebcd",
+        "#ffe4b5",
+        "#ffefd5",
+        "#fff5ee",
+        "#f5f5f5",
+        "#fff8dc",
+        "#fafad2",
+        "#fdf5e6",
+        "#ffe4c4",
+        "#faebd7",
+        "#ffe4e1",
+        "#f0fff0",
+        "#f5fffa",
+        "#f0ffff",
+        "#f0f8ff",
+        "#e6e6fa",
+        "#fff0f5",
+        "#fdf5e6",
+        "#fffff0",
+        "#f0ffff",
+        "#faf0e6",
+        "#fffaf0",
+        "#ffffe0",
+        "#f8f8ff",
+        "#d3d3d3",
+        "#add8e6",
+        "#e0ffff",
+        "#f0e68c",
+        "#dda0dd",
+        "#b0e0e6",
+        "#afeeee",
+        "#f5deb3",
+        "#ffe4e1",
+        "#f4a460",
+        "#ffdead",
+        "#ffebcd",
+        "#ffe4b5",
+        "#ffefd5",
+        "#fff5ee",
+        "#f5f5f5",
+        "#fff8dc",
+        "#fafad2",
+        "#fdf5e6",
+        "#ffe4c4",
+        "#faebd7",
+        "#ffe4e1",
+        "#f0fff0",
+        "#f5fffa",
+        "#f0ffff",
+        "#f0f8ff",
+        "#e6e6fa",
+        "#fff0f5",
+        "#fdf5e6",
+        "#fffff0",
+        "#f0ffff",
+        "#faf0e6",
+        "#fffaf0",
+        "#ffffe0",
+        "#f8f8ff",
+        "#d3d3d3",
+        "#add8e6",
+        "#e0ffff",
+        "#f0e68c",
+        "#dda0dd",
+        "#b0e0e6",
+        "#afeeee",
+        "#f5deb3",
+        "#ffe4e1",
+      ];
 
+      let i = 0;
 
+      bgColorChanger.onclick = function () {
+        document.body.style.backgroundColor = colors[i];
 
-   </main>
+        i++;
 
+        if (i >= colors.length) {
+          i = 0;
+        }
+      };
 
+      //   dynamic number
+      //   dynamic number
 
-   <script>
+      const buttons = document.querySelectorAll(".num-changing-btn");
+      const navNumber = document.getElementById("nav-dynamic-number");
+      const taskAssignNumber = document.getElementById("div1-dynamic-number");
 
-                            // bg color changer
-                            // bg color changer
-
-    function changeBgColor() {
-        const colors = [
-  '#f0f8ff', '#faebd7', '#f5f5dc', '#ffe4c4', '#f5f5f5', '#dcdcdc', '#fffafa', '#f0fff0',
-  '#f5fffa', '#f0ffff', '#f0f8ff', '#e6e6fa', '#fff0f5', '#fdf5e6', '#fffff0', '#f0ffff',
-  '#faf0e6', '#fffaf0', '#ffffe0', '#f8f8ff', '#d3d3d3', '#add8e6', '#e0ffff', '#f0e68c',
-  '#dda0dd', '#b0e0e6', '#afeeee', '#f5deb3', '#ffe4e1', '#f4a460', '#ffdead', '#ffebcd',
-  '#ffe4b5', '#ffefd5', '#fff5ee', '#f5f5f5', '#fff8dc', '#fafad2', '#fdf5e6', '#ffe4c4',
-  '#faebd7', '#ffe4e1', '#f0fff0', '#f5fffa', '#f0ffff', '#f0f8ff', '#e6e6fa', '#fff0f5',
-  '#fdf5e6', '#fffff0', '#f0ffff', '#faf0e6', '#fffaf0', '#ffffe0', '#f8f8ff', '#d3d3d3',
-  '#add8e6', '#e0ffff', '#f0e68c', '#dda0dd', '#b0e0e6', '#afeeee', '#f5deb3', '#ffe4e1',
-  '#f4a460', '#ffdead', '#ffebcd', '#ffe4b5', '#ffefd5', '#fff5ee', '#f5f5f5', '#fff8dc',
-  '#fafad2', '#fdf5e6', '#ffe4c4', '#faebd7', '#ffe4e1', '#f0fff0', '#f5fffa', '#f0ffff',
-  '#f0f8ff', '#e6e6fa', '#fff0f5', '#fdf5e6', '#fffff0', '#f0ffff', '#faf0e6', '#fffaf0',
-  '#ffffe0', '#f8f8ff', '#d3d3d3', '#add8e6', '#e0ffff', '#f0e68c', '#dda0dd', '#b0e0e6',
-  '#afeeee', '#f5deb3', '#ffe4e1'
-];
-      const randomColor = colors[Math.floor(Math.random() * colors.length)];
-      document.body.style.backgroundColor = randomColor;
-    }
-
-
-                                //   dynamic number
-                                //   dynamic number
-
-
-    const buttons = document.querySelectorAll('.num-changing-btn');
-    const navNumber = document.getElementById('nav-dynamic-number');
-    const taskAssignNumber = document.getElementById('div1-dynamic-number')
-
-    buttons.forEach(button => {
-      button.addEventListener('click', function() {
-        if (confirm('Board Updated Successfully.')) {
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          alert("Board Updated Successfully.");
 
           let currentNavNumber = parseInt(navNumber.textContent);
           navNumber.textContent = currentNavNumber + 1;
@@ -329,41 +557,173 @@
           let currentTaskNumber = parseInt(taskAssignNumber.textContent);
           taskAssignNumber.textContent = currentTaskNumber - 1;
 
-          const historyList = document.getElementById('history-section');
-          let history= document.getElementById('dark')
-            historyText = history.innerText
-
-            const newHistoryItem = document.createElement('p');
-            newHistoryItem.textContent = `You have completed the task ` + historyText;
-            historyList.appendChild(newHistoryItem);
-
-
-            
-
-
           button.disabled = true;
-          button.style.backgroundColor ='lightskyblue'
-        }
+          button.style.backgroundColor = "lightskyblue";
+        });
       });
-    });
 
+      // dynamic for button card 6
+      // dynamic for button card 6
 
-    const history = document.getElementById('btn-history')
-    history.addEventListener('click',function(){
-        let historyText = document.getElementById('history-section')
-        historyText.textContent = ''
+      const button = document.getElementById("btn-card6");
 
-    })
+      button.onclick = function () {
+        alert("Board Updated Successfully.");
+        alert("congrates!!! You have completed all the current task");
 
-            //  switch to discover page
+        let currentNavNumber = parseInt(navNumber.textContent);
+        navNumber.textContent = currentNavNumber + 1;
 
-    let discover = document.getElementById('discover')
-    discover.addEventListener('click',function(){
-        window.location.href = 'discover.html';
-    })
+        let currentTaskNumber = parseInt(taskAssignNumber.textContent);
+        taskAssignNumber.textContent = currentTaskNumber - 1;
 
-  </script>
-   
-</body>
+        button.disabled = true;
+        button.style.backgroundColor = "lightskyblue";
 
+        button.disabled = true;
+        button.style.backgroundColor = "lightskyblue";
+      };
+
+      //  button click and add history
+      //  button click and add history
+
+      let hBtn1 = document.getElementById("btn-card1");
+      hBtn1.addEventListener("click", function () {
+        const historyList = document.getElementById("history-section");
+        let history = document.getElementById("p1");
+        historyText = history.innerText;
+
+        const currentTime = new Date().toLocaleTimeString();
+
+        const newHistoryItem = document.createElement("p");
+
+        newHistoryItem.classList.add("bg-slate-100");
+        newHistoryItem.classList.add("p-5");
+        newHistoryItem.classList.add("m-5");
+        newHistoryItem.classList.add("rounded-lg");
+
+        newHistoryItem.textContent =
+          `You have completed the task ` + historyText + ` at ` + currentTime;
+        historyList.appendChild(newHistoryItem);
+      });
+
+      let hBtn2 = document.getElementById("btn-card2");
+      hBtn2.addEventListener("click", function () {
+        const historyList = document.getElementById("history-section");
+        let history = document.getElementById("p2");
+        historyText = history.innerText;
+
+        const currentTime = new Date().toLocaleTimeString();
+
+        const newHistoryItem = document.createElement("p");
+
+        newHistoryItem.classList.add("bg-slate-100");
+        newHistoryItem.classList.add("p-5");
+        newHistoryItem.classList.add("m-5");
+        newHistoryItem.classList.add("rounded-lg");
+
+        newHistoryItem.textContent =
+          `You have completed the task ` + historyText + ` at ` + currentTime;
+        historyList.appendChild(newHistoryItem);
+      });
+
+      let hBtn3 = document.getElementById("btn-card3");
+      hBtn3.addEventListener("click", function () {
+        const historyList = document.getElementById("history-section");
+        let history = document.getElementById("p3");
+        historyText = history.innerText;
+
+        const currentTime = new Date().toLocaleTimeString();
+
+        const newHistoryItem = document.createElement("p");
+
+        newHistoryItem.classList.add("bg-slate-100");
+        newHistoryItem.classList.add("p-5");
+        newHistoryItem.classList.add("m-5");
+        newHistoryItem.classList.add("rounded-lg");
+
+        newHistoryItem.textContent =
+          `You have completed the task ` + historyText + ` at ` + currentTime;
+        historyList.appendChild(newHistoryItem);
+      });
+
+      let hBtn4 = document.getElementById("btn-card4");
+      hBtn4.addEventListener("click", function () {
+        const historyList = document.getElementById("history-section");
+        let history = document.getElementById("p4");
+        historyText = history.innerText;
+
+        const currentTime = new Date().toLocaleTimeString();
+
+        const newHistoryItem = document.createElement("p");
+
+        newHistoryItem.classList.add("bg-slate-100");
+        newHistoryItem.classList.add("p-5");
+        newHistoryItem.classList.add("m-5");
+        newHistoryItem.classList.add("rounded-lg");
+
+        newHistoryItem.textContent =
+          `You have completed the task ` + historyText + ` at ` + currentTime;
+        historyList.appendChild(newHistoryItem);
+      });
+
+      let hBtn5 = document.getElementById("btn-card5");
+      hBtn5.addEventListener("click", function () {
+        const historyList = document.getElementById("history-section");
+        let history = document.getElementById("p5");
+        historyText = history.innerText;
+
+        const currentTime = new Date().toLocaleTimeString();
+
+        const newHistoryItem = document.createElement("p");
+
+        newHistoryItem.classList.add("bg-slate-100");
+        newHistoryItem.classList.add("p-5");
+        newHistoryItem.classList.add("m-5");
+        newHistoryItem.classList.add("rounded-lg");
+
+        newHistoryItem.textContent =
+          `You have completed the task ` + historyText + ` at ` + currentTime;
+        historyList.appendChild(newHistoryItem);
+      });
+
+      let hBtn6 = document.getElementById("btn-card6");
+      hBtn6.addEventListener("click", function () {
+        const historyList = document.getElementById("history-section");
+        let history = document.getElementById("p6");
+        historyText = history.innerText;
+
+        const currentTime = new Date().toLocaleTimeString();
+
+        const newHistoryItem = document.createElement("p");
+
+        newHistoryItem.classList.add("bg-slate-100");
+        newHistoryItem.classList.add("p-5");
+        newHistoryItem.classList.add("m-5");
+        newHistoryItem.classList.add("rounded-lg");
+
+        newHistoryItem.textContent =
+          `You have completed the task ` + historyText + ` at ` + currentTime;
+        historyList.appendChild(newHistoryItem);
+      });
+
+      //   clear history
+      //   clear history
+
+      const history = document.getElementById("btn-history");
+      history.addEventListener("click", function () {
+        let historyText = document.getElementById("history-section");
+        historyText.textContent = "";
+        historyText.classList.remove("bg-slate-100");
+      });
+
+      //  switch to discover page
+      //  switch to discover page
+
+      let discover = document.getElementById("discover");
+      discover.addEventListener("click", function () {
+        window.location.href = "discover.html";
+      });
+    </script>
+  </body>
 </html>
